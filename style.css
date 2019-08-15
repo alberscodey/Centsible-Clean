@@ -1,15 +1,41 @@
 /* Global Styles */
 /*font-family: 'Libre Franklin', sans-serif;
 font-family: 'Libre Baskerville', serif;*/
+.html {
+    overflow-x: hidden;
+}
+body {
+    margin-left: -8px;
+}
+.center {
+    display: block;
+    margin: auto;
+}
 .hidden {
     display: none;
 }
 .shadow {
-    box-shadow: 2px 0px 2px #373737;
+    box-shadow: 0px 2px 2px #373737;
+}
+h2,h3 {
+    font-family: 'Libre Franklin', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    opacity: 0.7;
+}
+h2 {
+    font-size: 60px;
+    text-align: center;
+}
+h3 {
+    font-size: 25px;
 }
 p {
     font-family: 'Libre Baskerville', serif;
+    font-size: 20px;
+    line-height: 30px;
     color: #2C2C2C;
+    opacity: 0.8;
 }
 .italics {
     font-style: italic;
@@ -39,18 +65,21 @@ p {
     text-decoration: none;
 }
 
+
 /*Now Let's start with the Nav*/
 header {
     position: sticky;
     position: -webkit-sticky;
     top: 0;
-    overflow: hidden;
+    z-index: 1000;
 }
 nav {
     margin-left: -8px;
     width: 100vw;
     display: grid;
-    grid-template-columns: 65% 35%;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+    align-items: center;
     background-color: rgba(255, 255, 255, 0.95);
     font-family: 'Libre Franklin', sans-serif;
     font-size: 16px;
@@ -58,17 +87,16 @@ nav {
     letter-spacing: 0.06em;
 }
 .nav-logo {
-    margin-top: 15px;
-    margin-left: 122px;
+    margin-left: -130px;
+    padding-left: -200px;
+    width: auto;
+    height: 50px;
 }
 .nav-list {
     list-style: none;
     display: flex;
     flex-direction: row;
-}
-nav li {
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-right: 200px;
 }
 nav a {
     text-decoration: none;
@@ -95,17 +123,19 @@ nav a {
 .landing {
     display: grid;
     grid-template-columns: 50% 50%;
+    justify-items: center;
     margin-top: 100px;
     margin-bottom: 150px;
 }
 .landing-left {
-    padding-left: 122px;
+    padding-left: 270px;
 }
 .landing p {
     padding-top: 67px;
 }
 .hero-heading {
     font-size: 50px;
+    line-height: 62px;
 }
 .landing hr {
     width: 121px;
@@ -116,10 +146,70 @@ nav a {
 }
 .hero-subheading {
     font-size: 30px;
+    line-height: 37px;
 }
 .hero-cta {
     margin-top: 100px;
 }
 .landing-right {
     padding-top: 100px;
+}
+
+/*Services Section*/
+.services {
+    width: 100vw;
+    padding-top: 130px;
+    padding-bottom: 130px;
+    background-color: rgba(196,196,196,0.15);
+}
+.services h2 {
+    margin-bottom: 175px;
+}
+.services p {
+    width: 420px;
+}
+.services ul {
+    margin-bottom: 24px;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 20px;
+    line-height: 35px;
+    color: #2C2C2C;
+    opacity: 0.8;
+}
+
+.individual-services, .business-services, .debt-services {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+    margin-bottom: 180px;
+}
+.individual-left, .business-left {
+    padding-left: 200px;
+}
+.debt-left {
+    padding-left: 150px;
+}
+.individual-right, .business-right, .debt-right {
+    padding-right: 200px;
+}
+.individual-services-icon, .business-services-icon, .debt-services-icon {
+    margin-top: -40px;
+}
+
+/*Testimonial section*/
+.testimonial {
+    width: 100vw;
+    padding-top: 400px;
+    padding-bottom: 200px;
+    margin-bottom: 200px;
+}
+.testimonial-bg-desktop {
+    width: 100vw;
+}
+
+
+
+
+footer {
+    margin-top: 200px;
 }
