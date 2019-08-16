@@ -199,15 +199,55 @@ nav a {
 /*Testimonial section*/
 .testimonial {
     width: 100vw;
-    padding-top: 400px;
+    padding-top: 500px;
     padding-bottom: 200px;
     margin-bottom: 200px;
 }
+.testimonial-card {
+    width: 750px;
+    height: 704px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25), 0px 0px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding-top: 0px;
+    justify-content: center;
+    background-color: white;
+}
+.testimonial-byline {
+    margin-top: 4px;
+    margin-left: 241px;
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: bold;
+    opacity: 0.5;
+}
+.lavon-story {
+    width: 640px;
+    margin-top: 38px;
+    margin-left: 42px;
+}
+.big-quote {
+    font-family: 'Playfair Display', serif;
+    font-size: 300px;
+    color: #016645;
+    opacity: 0.6;
+    padding: 0;
+    margin: 0;
+}
+#testimonial-left-quote {
+    padding-top: 100px;
+    margin-bottom: -100px;
+    margin-left: 30px;
+}
+#testimonial-right-quote {
+    margin-top: 100px;
+    margin-left: 555px;
+
+}
 .testimonial-bg-desktop {
     width: 100vw;
+    margin-top: -900px;
+    position: absolute;
+    z-index: -1;
 }
-
-
 
 
 footer {
