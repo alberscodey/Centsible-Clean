@@ -281,6 +281,10 @@ body {
 }
 
 
+.contact {
+    width: 100vw;
+    margin-top: 200px;
+}
 .contact-form {
     width: 620px;
     height: 1266px;
@@ -367,10 +371,12 @@ footer {
     .hero-heading {
         font-size: 34px;
         line-height: 42px;
+        max-width: 370px;
     }
     .hero-subheading {
         font-size: 20px;
         line-height: 25px;
+        max-width: 370px;
     }
     .landing-left {
         padding-left: 416px;
@@ -606,6 +612,9 @@ footer {
         width: 355px;
     }
 
+    .contact {
+        width: 105vw;
+    }
     .contact-form {
         width: 300px;
         height: 1500px;
