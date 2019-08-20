@@ -256,6 +256,9 @@ body {
     position: absolute;
     z-index: -1;
 }
+.testimonial-bg-mobile {
+    display: none;
+}
 
 /*Founder's Story Section*/
 .about {
@@ -275,6 +278,12 @@ body {
 }
 .about-text-2 {
     width: 590px;
+}
+
+
+.contact-form {
+    width: 620px;
+    height: 1266px;
 }
 
 footer {
@@ -387,7 +396,6 @@ footer {
     }
     .services ul {
         margin-bottom: 24px;
-        font-family: 'Libre Baskerville', serif;
         font-size: 18px;
         line-height: 32px;
     }
@@ -446,5 +454,219 @@ footer {
 
     .about {
         padding-top: 0px;
+    }
+}
+
+/*Mobile - There will be 2; one for a wider screen phone (i.e. newer Iphones and Samsung devices) and one for smaller width screens (i.e. older iphones and poorer quality androids)*/
+/* Bigger Mobile Phones */
+@media (max-width: 420px) {
+    /*Start with the Nav*/
+    header {
+        width: 105vw;
+    }
+    nav {
+        grid-template-columns: 100% 0%;
+        margin-left: 0px;
+        width: 105vw
+    }
+    .nav-logo {
+        padding-right: 0px;
+    }
+    .nav-list {
+        display: none;
+        padding-right: 0px;
+        font-size: 12px;
+    }
+
+    /*Body*/
+    body {
+        margin-left: 0px;
+    }
+    h2 {
+        font-size: 22px;
+        line-height: 27px;
+    }
+    h3 {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    p {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .body-cta {
+        width: 355px;
+        height: 40px;
+        padding-top: 20px;
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    /* Landing */
+    .landing {
+        width: 105vw;
+        grid-template-columns: 100%;
+        margin-top: 20px;
+        justify-items: center;
+    }
+    .landing p {
+        padding-top: 20px
+    }
+    .landing-left {
+        order: 2;
+        padding-left: 0px;
+        justify-items: center;
+    }
+    .landing hr {
+        width: 100px;
+    }
+    .hero-cta {
+        margin-left: 0px;
+        margin-top: 100px;
+    }
+    .lading-right {
+        order: 1;
+        justify-items: center;
+    }
+    .piggy {
+        height: 300px;
+        width: auto;
+    }
+
+    /* Services */
+    .services {
+        width: 105vw;
+        padding-bottom: 30px;
+        justify-items: center;
+    }
+    .services p {
+        width: 355px;
+    }
+    .services ul {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .individual-services-icon, .business-services-icon, .debt-services-icon {
+        height: 300px;
+        width: auto;   
+    }
+
+    /* Testimonial */
+    .testimonial-card {
+        width: 315px;
+        height: 850px;
+        justify-items: center;
+        background-color: rgba(255, 255, 255, 0.7)
+    }
+    .customer-img {
+        margin-top: 20px;
+    }
+    .testimonial-byline {
+        margin-left: 70px;
+    }
+    .lavon-story {
+        width: 285px;
+        margin-top: 17px;
+        margin-left: 22px;
+    }
+    .testimonial-bg-desktop {
+        display: none;
+    }
+    .testimonial-bg-mobile {
+        display: block;
+        margin: auto;
+        width: 105vw;
+        margin-top: -700px;
+        position: absolute;
+        z-index: -1;
+    }
+    .big-quote {
+        font-size: 180px;
+    }
+    #testimonial-left-quote {
+        padding-top: 65px;
+        margin-bottom: -50px;
+        margin-left: 10px;
+    }
+    #testimonial-right-quote {
+        margin-top: 80px;
+        margin-left: 240px;
+    }
+
+    /* About Section / Founder's Story */
+    .about {
+        margin-top: -150px;
+        padding-top: 0px;
+    }
+    .about-text-1 {
+        width: 355px;
+        margin-bottom: 12px;
+    }
+    .about-text-2 {
+        width: 355px;
+    }
+
+    .contact-form {
+        width: 300px;
+        height: 1500px;
+    }
+}
+
+/* Smaller Mobile Devices */
+@media (max-width: 320px) {
+    /*Body*/
+    .body-cta {
+        width: 300px;
+    }
+
+    /* Landing */
+    .hero-heading {
+        font-size: 22px;
+        line-height: 27px;
+    }
+    .landing hr {
+        width: 40px;
+        height: 4px;
+    }
+    .hero-subheading {
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .hero-cta {
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    .lading-right {
+        order: 1;
+        justify-items: center;
+        padding-top: 20px;
+    }
+
+    /* Services */
+    .services p {
+        width: 300px;
+    }
+
+    /* Testimonial */
+    .testimonial-card {
+        width: 300px;
+    }
+    .lavon-story {
+        width: 260px;
+    }
+    #testimonial-left-quote {
+        margin-left: 10px;
+    }
+    #testimonial-right-quote {
+        margin-top: 40px;
+        margin-left: 200px;
+    }
+    .testimonial-bg-mobile {
+        width: 120vw;
+    }
+
+    /* About */
+    .about-text-1, .about-text-2 {
+        width: 300px;
     }
 }
